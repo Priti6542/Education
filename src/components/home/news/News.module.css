@@ -1,0 +1,27 @@
+.news_container {
+    background-color: white;
+    padding-top:20px ;
+    background-image: url("../../../assets/background.svg"); /* Specify the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+    display: flex; /* Use flexbox for centering the content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    height: 100vh; /* Make the container take up the full viewport height */
+    width: 100%; /* Ensure the container takes up the full width */
+    gap: 1rem;
+}   
+.news_details{
+    background-color: white;
+    position: absolute; 
+    transform: translate(5%, -50%);  
+    width: 22%;
+    z-index: 2;  
+    border-radius: 10px;
+    
+}
+img{
+    border-radius: 10px;
+}

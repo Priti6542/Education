@@ -1,0 +1,103 @@
+body{
+    background-color:floralwhite;
+    font-family: "Poppins", serif;
+    
+}
+.section-title{
+    font-size: 10px;
+}
+.hero{
+    display: flex;
+    gap: 5rem;
+    margin-top: 5rem;
+    background-color:floralwhite;
+   
+
+}
+.hero ::after{
+    display: flex;
+    gap: 5rem;
+    margin-top: 5rem;
+    background-color: floralwhite;
+    position: relative;  /* To make sure the pseudo-element positions correctly */
+    border-radius: 10px;
+    overflow: hidden;  /* Prevent overflow from the wave shape */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 60% 80%, 40% 100%, 20% 80%, 0 100%); /* Create wave effect */
+}
+
+/* .hero::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: block;
+    background: linear-gradient(-45deg,transparent 33.33%,
+                            skyblue 33.33%,skyblue 66.666%,transparent 66.66% ),
+                            linear-gradient(-45deg,transparent 33.33%,
+                            skyblue 33.33%,skyblue 66.666%,transparent 66.66% );
+} */
+
+
+
+.hero_l{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   
+    margin-left: 10rem;
+    font-size: 1.70rem;
+}
+.span{
+    color: red;
+}
+.hero_text{
+    font-size: 1rem;
+}
+.btn_has_before{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: orange;
+    padding: 15px 20px;
+    width: 10rem;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.image_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Shape image styling */
+.shape_image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hero image that will be placed on top of the shape */
+.img1 {
+    position: absolute;
+    top: 40%;  /* Position it vertically in the middle */
+    left: 20%;  /* Position it horizontally in the middle */
+    transform: translate(-50%, -50%);  /* Center the image */
+    max-width: 80%;  /* Adjust size */
+    z-index: 2;  /* Ensure it appears above the shape */
+    border-bottom-left-radius:50%;
+    border-top-right-radius:30%;
+}
+.img2 {
+    position: absolute;
+    top: 64%; 
+    left: 70%;
+    transform: translate(-50%, -50%);  /* Center the image */
+    max-width: 80%;  /* Adjust size */
+    z-index: 2;  /* Ensure it appears above the shape */
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 40%;
+}
