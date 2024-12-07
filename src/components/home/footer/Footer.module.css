@@ -69,7 +69,8 @@
 
 @media (max-width: 1024px) {
     .Footer{
-        height: 100vh;
+        height: 170vh;
+        margin-left: 1px;
     }
     .content {
         margin-top: 200px;

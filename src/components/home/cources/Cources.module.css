@@ -187,7 +187,7 @@
     }
   
     .time {
-      transform: translate(330%, 10%);
+      transform: translate(360%, 20%);
       font-size: 12px;
     }
     .button {
@@ -198,6 +198,13 @@
       }
       .heading{
         margin-top: -80px;
+      }
+      .course_card h3{
+        width: 50%;
+      }
+      .button{
+        width: 50%;
+        margin-left: 25%;
       }
   }
   

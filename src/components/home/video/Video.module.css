@@ -11,7 +11,7 @@
 }
 .videoEmbed{
     position: absolute;
-    transform: translate(45%, -110%);  /* Center the image */
+    transform: translate(48%, -110%);  /* Center the image */
     max-width: 80%;  /* Adjust size */
     z-index: 2;  /* Ensure it appears above the shape */
 }
