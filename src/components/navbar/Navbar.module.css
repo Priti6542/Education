@@ -1,184 +1,225 @@
 /* Navbar.module.css */
 .container {
-    position: sticky;
-    background-color: #fff; /* Set background color */
-    padding: 10px 30px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Logo styles */
-  /* .logo img {
+  position: fixed;
+  background-color: #fff;
+  /* Set background color */
+  margin-top: -80px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 99vw;
+  z-index: 100;
+  padding: 20px;
+}
+
+/* Logo styles */
+/* .logo img {
     width: 162px;
     height: 50px;
   } */
-  
-  /* Navbar container */
-  .Navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  /* Wrapper for logo and menu buttons */
-  /* .wrapper {
+
+/* Navbar container */
+.Navbar {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Wrapper for logo and menu buttons */
+/* .wrapper {
     display: flex;
     align-items: center;
   } */
-  
-  /* Navbar list styles */
-  .navbarList {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navbar item styles */
-  .navbarItem {
-    margin-right: 20px;
-  }
-  
-  /* .navbarItem:last-child {
+
+/* Navbar list styles */
+.navbarList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/*gap between navbar link*/
+.navbarItem {
+  margin-right: 20px;
+  margin-top: 0px;
+}
+
+/* .navbarItem:last-child {
     margin-right: 0;
   } */
-  
-  /* Navbar link styles */
-  .navbarLink {
-    text-decoration: none;
-    color: #333; 
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
+
+/* Navbar link styles */
+.navbarLink {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+}
+
+.navbarLink:hover {
+  color: orange;
+}
+
+/* Header actions container */
+.headerActions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+  flex-direction: row;
+
+
+}
+
+/* Header action button styles  cart */
+.headerActionBtn {
+  position: relative;
+  display: flex;
+  margin-top: -20px;
+  background-color: transparent;
+  border: none;
+}
+
+.search {
+  display: flex;
+  margin-top: -20px;
+  background-color: transparent;
+  border: none;
+}
+
+.search:hover,
+.headerActionBtn:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+/* Badge style for cart */
+.btnBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #FF5733;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Try for free button style */
+.btnHasBefore {
+  background-color: orange;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  float: right;
+  margin-right: 60px;
+  margin-top: -20px;
+
+}
+
+.btnHasBefore:hover {
+  color: blue;
+
+}
+
+
+
+/* Overlay style (for mobile menu overlay) */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 999;
+}
+
+/* Navbar close button */
+.navCloseBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* Mobile navbar styles */
+@media screen and (max-width: 768px) {
+
+  /* Default mobile navbar state (hidden) */
+  .navbarList {
+    display: none;
+    /* Initially hide the navbar */
+    list-style: none;
+    flex-direction: column;
+    /* Stack navbar items vertically */
+    position: absolute;
+    top: 60px;
+    /* Position below the navbar */
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
   }
-  
-  .navbarLink:hover {
-    color:orange; 
+
+  /* When the menu is opened */
+  .navbarListOpen {
+    display: flex;
+    animation: slideIn 0.3s ease-in-out;
+    background-color: rgba(128, 128, 128, 0.5); 
   }
-  
-  /* Header actions container */
-   .headerActions {
+
+  /* Animation for sliding in */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  /* Styling for navbar items (if needed) */
+  .navbarItem {
+    padding: 10px;
+    text-align: center;
+  }
+  .headerActionBtn{
+    margin-left: px;
+  }
+ 
+
+  /* Mobile menu icon */
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .barIcon {
+    font-size: 30px;
+    color: #333;
+  }
+  .btnHasBefore{
+    display: none;
+  }
+  .headerActions {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 2rem;
     flex-direction: row;
-    
-   
-  } 
-  
-  /* Header action button styles */
-   .headerActionBtn { 
-    position: relative;
-    display: flex;
-    margin-top: -20px;
-    background-color: transparent;
-    border: none;
-  } 
-  
-  .search{
-    display: flex;
-    margin-top: -20px;
-    background-color: transparent;
-    border: none;
+
   }
-  .search:hover,.headerActionBtn:hover{
-    color: orange;
-    cursor: pointer;
-  }
-  
-  /* Badge style for cart */
-   .btnBadge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: #FF5733; 
-    color: white;
-    font-size: 12px;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
-  
-  /* Try for free button style */
-   .btnHasBefore {
-    background-color:orange; 
-    color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    float: right;
-    margin-top: -20px;
-    
-  } 
-  
-  .btnHasBefore:hover {
-    color:blue; 
-   
-  }
-  
  
   
-  /* Overlay style (for mobile menu overlay) */
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
-    z-index: 999;
-  }
-  
-  /* Navbar close button */
-  .navCloseBtn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-  }
-  
-  /* Mobile navbar styles */
-  @media (max-width: 768px) {
-    /* Adjust navbar layout for small screens */
-    .Navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbarList {
-      flex-direction: column;
-      width: 100%;
-      padding-left: 0;
-    }
-  
-    .navbarItem {
-      margin-right: 0;
-      width: 100%;
-      text-align: left;
-    }
-  
-    .navbarLink {
-      padding: 15px 20px;
-      width: 100%;
-      display: block;
-    }
-  
-    .headerActions {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    /* Show the overlay and close button in mobile view */
-    .overlay {
-      display: block;
-    }
-  }
-  
+}

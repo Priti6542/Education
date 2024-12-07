@@ -16,14 +16,21 @@ const Card = () => {
                     <div
                         className={styles.card}
                         key={index}
-                        style={{ backgroundColor: card.backgroundcolor }} // Dynamically set background color
+                        style={{ backgroundColor: card.backgroundcolor }} // Dynamically set background color for the card
                     >
-                        {/* Display the icon if available */}
-                        {card.icon && <img src={card.icon} alt={card.name} />}
-
+                        {/* Display the image */}
+                        {card.image && <img src={card.image} alt={card.name} className={styles.cardImage} />}
+                        
                         <h3>{card.name}</h3>
                         <p>{card.details}</p>
-                        <div>{card.cources}</div>
+                        
+                        {/* Apply the dynamic background for the "Courses" section */}
+                        <div 
+                            className={styles.courses} 
+                            style={{ backgroundColor: card.coursesBackgroundColor }}  // Dynamic background color for the "Courses" section
+                        >
+                            {card.cources}
+                        </div>
                     </div>
                 ))}
             </div>
@@ -32,3 +39,4 @@ const Card = () => {
 };
 
 export default Card;
+6

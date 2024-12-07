@@ -1,124 +1,217 @@
 /* Reasons.module.css */
 
 .reasons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px;
-    background-color: white;
-  }
-  
-  /* Right side container where both images will be */
-  .reasons_r {
-    position: relative;
-    width: 50%; /* Or any width that suits your design */
-   
-  }
-  
-  /* Container for the two images to layer them */
-  .imageContainer {
-    position: relative;
-    width: 90%;
-    height: auto;
-  }
-  
-  /* Shape image as the background or the base image */
-  .shapeImg {
-    width: 130%;
-    height: auto; /* Adjust the height if necessary */
-    object-fit: cover; /* This will ensure the image covers the space */
-    background: transparent;
-  }
-  
-  /* Reasons image positioned on top */
-  .reasonsImg {
-    position: absolute;
-    top: 50%; /* Adjust this to position it correctly */
-    left: 80%; /* Adjust this to center it */
-    transform: translate(-50%, -50%); /* To center the image */
-    width: 85%; /* Or adjust based on your design */
-    z-index: 1; /* Ensures this image is on top */
-    border-radius: 10px;
-  }
-  .reasonsShape{
-    position: absolute;
-    top: 30%; /* Adjust this to position it correctly */
-    left: 110%; /* Adjust this to center it */
-    transform: translate(-50%, -50%); /* To center the image */
-    width: 60%; /* Or adjust based on your design */
-    z-index: 1; /* Ensures this image is on top */
-  }
-  
-  /* Left side container (you can add content here) */
-  .reasons_l {
-    width: 30%; /* Adjust this as needed */
-    margin-left: 10%;
-   
-  }
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); /* Start at the normal position */
-    }
-    20% {
-      transform: translateY(-30px); /* Move up */
-    }
-    40% {
-      transform: translateY(0); /* Return to the original position */
-    }
-    60% {
-      transform: translateY(-5px); /* Slight move up again */
-    }
-    80% {
-      transform: translateY(0); /* Return to the original position */
-    }
-    100% {
-      transform: translateY(0); /* End at the normal position */
-    }
-  }
-  
-  .learners{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    background-color: white;
-    width: 40%;
-    height: 100px;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-    position: absolute;
-    top: 70%; 
-    left: 20%; 
-    z-index: 1; 
-    box-shadow: 1px 40px 70px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.05);
-    animation: bounce 2.5s infinite;
-  }
-  .learners div:nth-child(1) {
-    background-color: rgb(254, 217, 217); 
-    border-radius: 50px; 
-    padding: 10px; 
-    color: rgb(218, 62, 62);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: white;
 }
-.span{
+
+/* Right side container where both images will be */
+.reasons_r {
+  position: relative;
+  width: 50%;
+  /* Or any width that suits your design */
+
+}
+
+/* Container for the two images to layer them */
+.imageContainer {
+  position: relative;
+  width: 90%;
+  height: auto;
+}
+
+/* Shape image as the background or the base image */
+.shapeImg {
+  width: 130%;
+  height: auto;
+  /* Adjust the height if necessary */
+  object-fit: cover;
+  /* This will ensure the image covers the space */
+  background: transparent;
+}
+
+/* Reasons image positioned on top */
+.reasonsImg {
+  position: absolute;
+  top: 50%;
+  /* Adjust this to position it correctly */
+  left: 80%;
+  /* Adjust this to center it */
+  transform: translate(-50%, -50%);
+  /* To center the image */
+  width: 85%;
+  /* Or adjust based on your design */
+  z-index: 1;
+  /* Ensures this image is on top */
+  border-radius: 10px;
+}
+
+.reasonsShape {
+  position: absolute;
+  top: 30%;
+  /* Adjust this to position it correctly */
+  left: 110%;
+  /* Adjust this to center it */
+  transform: translate(-50%, -50%);
+  /* To center the image */
+  width: 60%;
+  /* Or adjust based on your design */
+  z-index: 1;
+  /* Ensures this image is on top */
+}
+
+/* Left side container (you can add content here) */
+.reasons_l {
+  width: 30%;
+  /* Adjust this as needed */
+  margin-left: 10%;
+
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    /* Start at the normal position */
+  }
+
+  20% {
+    transform: translateY(-30px);
+    /* Move up */
+  }
+
+  40% {
+    transform: translateY(0);
+    /* Return to the original position */
+  }
+
+  60% {
+    transform: translateY(-5px);
+    /* Slight move up again */
+  }
+
+  80% {
+    transform: translateY(0);
+    /* Return to the original position */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* End at the normal position */
+  }
+}
+
+.learners {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: white;
+  width: 40%;
+  height: 100px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  z-index: 1;
+  box-shadow: 1px 40px 70px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.05);
+  animation: bounce 2.5s infinite;
+}
+
+.learners div:nth-child(1) {
+  background-color: rgb(254, 217, 217);
+  border-radius: 50px;
+  padding: 10px;
+  color: rgb(218, 62, 62);
+}
+
+.span {
   color: rgb(218, 62, 62);
   font-size: 2.1rem;
 }
-p{
+
+p {
   color: grey;
   font-size: 1rem;
 }
-.features li{
+
+.features li {
   list-style: none;
-  
+
 }
-.content{
-  font-size:18px ;
+
+.content {
+  font-size: 18px;
 }
-.reasonsshape3{
+
+.reasonsshape3 {
   position: absolute;
-  top: 255%; /* Adjust this to position it correctly */
-  left: 93%; /* Adjust this to center it */
-  transform: translate(-50%, -50%); /* To center the image */
+  top: 255%;
+  /* Adjust this to position it correctly */
+  left: 93%;
+  /* Adjust this to center it */
+  transform: translate(-50%, -50%);
+  /* To center the image */
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Ensure that no overflow happens */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Add padding for spacing */
+  }
+
+  .content {
+    margin-top: 0; /* Remove the negative margin */
+    font-size: 14px; /* Adjust font size */
+    margin-left: 0; /* Remove the negative margin */
+    text-align: center; /* Center the text */
+    padding: 0 1rem; /* Add padding for better readability */
+  }
+
+  .content p {
+    text-align: center; /* Center paragraph text */
+    font-size: 15px;
+  }
+
+  /* Hide unnecessary shapes/images on mobile */
+  .shapeImg, .reasonsshape3 {
+    display: none;
+  }
+
+  /* Adjust the reasons image */
+  .reasonsImg .img {
+    width: 100%;  /* Reduce size more on mobile */
+  }
+
+  /* Adjust learners container */
+  .learners {
+    width: 90%; /* Increase width for mobile */
+    top: 80%; /* Adjust position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 0.5rem; /* Add padding for spacing */
+    font-size: 14px; /* Adjust font size */
+  }
+  /* Adjust the left container */
+  .reasons_l {
+    width: 100%; /* Make it full width on mobile */
+    margin-left: 0;
+    padding: 0 1rem; /* Add padding */
+  }
+
 }

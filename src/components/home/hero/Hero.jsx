@@ -29,7 +29,7 @@ function Hero() {
                 <div className={styles.hero_r}>
                     <div className={styles.image_container}>
                         <div className={styles.image}>
-                            <img src={shape} alt="Hero shape" />
+                            <img src={shape} alt="" />
                         </div>
                         <img src={heroimg1} alt="" className={styles.img1} />
                         <img src={heroimg2} alt="" className={styles.img2} />

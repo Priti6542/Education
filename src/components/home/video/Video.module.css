@@ -21,3 +21,20 @@
     border-top-right-radius: 15%;
     border-bottom-left-radius: 10%;
 }
+  
+  /* For mobile devices */
+  @media screen and (max-width: 768px) {
+    .videoshape{
+        display: none;
+    }
+    .videoEmbed{
+        width:62%;
+    }
+    .videoContainer{
+      margin-top: 300px;
+        margin-left: -100px;
+        
+    }
+  }
+  
+  

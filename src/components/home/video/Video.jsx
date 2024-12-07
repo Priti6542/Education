@@ -15,7 +15,7 @@ function Video() {
                     <video
                         className={styles.videoPlayer}
                         controls
-                        poster={videoshape1} // Show the placeholder image as a poster before playing the video
+                        // Show the placeholder image as a poster before playing the video
                     >
                         <source src={video1} type="video/mp4" />
 

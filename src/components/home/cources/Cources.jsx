@@ -70,7 +70,7 @@ function Cources() {
                     </div>
                 ))}
             </div>
-            <button className={styles.button}>Browse more courses<IoIosArrowRoundForward size={25}/></button>
+            <button className={styles.button}>Browse more courses<IoIosArrowRoundForward size={25} /></button>
         </div>
     );
 }

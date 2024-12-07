@@ -13,7 +13,7 @@ function Reasons() {
       <div className={styles.reasons_r}>
         <div className={styles.imageContainer}>
           <img src={shape2} alt="shape" className={styles.shapeImg} />
-          <img src={reasonsimg1} alt="reasons" className={styles.reasonsImg} />
+          <img src={reasonsimg1} className={styles.reasonsImg} />
           <img src={reasonsshape2} alt="reasons" className={styles.reasonsShape} />
           <div className={styles.learners}>
             <div>+<BsPeople size={30}/></div>
