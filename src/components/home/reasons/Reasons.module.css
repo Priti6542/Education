@@ -167,51 +167,71 @@ p {
   }
 
   /* Hero Section */
-  .hero {
+  .reasons{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1rem; /* Add padding for spacing */
   }
-
-  .content {
-    margin-top: 0; /* Remove the negative margin */
-    font-size: 14px; /* Adjust font size */
-    margin-left: 0; /* Remove the negative margin */
-    text-align: center; /* Center the text */
-    padding: 0 1rem; /* Add padding for better readability */
+  .reasons_r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Add padding for spacing */
   }
-
-  .content p {
-    text-align: center; /* Center paragraph text */
-    font-size: 15px;
-  }
-
-  /* Hide unnecessary shapes/images on mobile */
-  .shapeImg, .reasonsshape3 {
-    display: none;
-  }
-
-  /* Adjust the reasons image */
-  .reasonsImg .img {
-    width: 100%;  /* Reduce size more on mobile */
+  .reasonsImg{
+    width: 200%;
   }
 
   /* Adjust learners container */
   .learners {
-    width: 90%; /* Increase width for mobile */
-    top: 80%; /* Adjust position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    padding: 0.5rem; /* Add padding for spacing */
-    font-size: 14px; /* Adjust font size */
+    width: 100%; 
+   
+    transform: translateX(-50% -50%); 
+    font-size: 15px; 
   }
-  /* Adjust the left container */
-  .reasons_l {
-    width: 100%; /* Make it full width on mobile */
-    margin-left: 0;
-    padding: 0 1rem; /* Add padding */
+  .learners div:nth-child(1)
+  {
+    width: 30%;
+  }
+  .enroll .span{
+    font-size: 20px;
+  }
+
+  .shapeImg, .reasonsshape3 {
+    display: none;
+  }
+    .reasonsShape{
+     display: none;
+    }
+    .shapeImg, .reasonsshape3 {
+      display: none;
+    }
+    .reasonsShape{
+       display: none;
+      }
+  .reasons_l
+  {
+    padding-left: 20px;
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 95vw;
+   margin-left: -0px;
+  
+  }
+  .content h1 ,.span{
+    font-size:1.75rem;
+  }
+  .content p{
+    text-align: start;
+  }
+  .features li{
+    margin-left: -230px;
   }
 
 }

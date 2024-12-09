@@ -154,7 +154,7 @@
       align-items: center;
     }
     .course_card {
-      width: 80%; /* Full width for mobile devices */
+      width: 90%; /* Full width for mobile devices */
       margin-bottom: 20px;
     }
   
