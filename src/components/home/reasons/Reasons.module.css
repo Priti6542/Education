@@ -230,8 +230,8 @@ p {
   .content p{
     text-align: start;
   }
-  .features li{
-    margin-left: -230px;
+  .features ul li{
+    margin-left: -220px;
   }
 
 }
