@@ -182,7 +182,7 @@ p {
     padding: 1rem; /* Add padding for spacing */
   }
   .reasonsImg{
-    width: 200%;
+    width: 100%;
   }
 
   /* Adjust learners container */
@@ -231,7 +231,7 @@ p {
     text-align: start;
   }
   .features ul li{
-    margin-left: -220px;
+    margin-left: -180px;
   }
 
 }
