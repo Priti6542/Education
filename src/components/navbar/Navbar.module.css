@@ -158,13 +158,10 @@
   /* Default mobile navbar state (hidden) */
   .navbarList {
     display: none;
-    /* Initially hide the navbar */
     list-style: none;
     flex-direction: column;
-    /* Stack navbar items vertically */
     position: absolute;
     top: 60px;
-    /* Position below the navbar */
     left: 0;
     right: 0;
     background-color: white;
@@ -175,7 +172,7 @@
   .navbarListOpen {
     display: flex;
     animation: slideIn 0.3s ease-in-out;
-    background-color: rgba(128, 128, 128, 0.5); 
+    background-color: rgba(128, 128, 128, 0.5);
   }
 
   /* Animation for sliding in */
@@ -194,10 +191,6 @@
     padding: 10px;
     text-align: center;
   }
-  .headerActionBtn{
-    margin-left: px;
-  }
- 
 
   /* Mobile menu icon */
   .menuIcon {
@@ -205,21 +198,29 @@
     cursor: pointer;
   }
 
-  .barIcon {
-    font-size: 30px;
-    color: #333;
+  /* Adjust badge centering for mobile view */
+  .headerActionBtn {
+    position: relative;  /* Makes the badge position relative to this parent */
   }
-  .btnHasBefore{
-    display: none;
-  }
-  .headerActions {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 2rem;
-    flex-direction: row;
 
+  .btnBadge {
+  position: relative;
+  top: -5px;
+  right: 10px;
+  background-color: #FF5733;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* Optional: Make the number bold */
   }
- 
-  
+
+  /* Hide .btnHasBefore content on mobile */
+  .btnHasBefore {
+    display: none;  /* This will hide the element completely */
+  }
+
 }
