@@ -10,6 +10,8 @@ const Navbar = () => {
     const mobile = window.innerWidth <= 768;  // Check if it's a mobile view
     const [menuOpened, setMenuOpened] = useState(false);  // Track menu state
 
+    const closeMenu=()=>setMenuOpened(false);
+
     return (
         <div className={styles.container}>
             {/* Mobile Menu Icon - only visible on mobile */}

@@ -182,19 +182,23 @@ p {
     padding: 1rem; /* Add padding for spacing */
   }
   .reasonsImg{
-    width: 100%;
+    width: 200%;
+    margin-left: -50px;
+    margin-top: 50px;
+    z-index: 1;
   }
 
   /* Adjust learners container */
   .learners {
-    width: 100%; 
-   
-    transform: translateX(-50% -50%); 
-    font-size: 15px; 
+    width: 150%; 
+    height: 80px;
+   margin-left: -112px;
+    font-size: 15px;
+    margin-top: 82px; 
   }
   .learners div:nth-child(1)
   {
-    width: 30%;
+    width: 20%;
   }
   .enroll .span{
     font-size: 20px;
@@ -215,7 +219,7 @@ p {
   .reasons_l
   {
     
-    margin-top: 30%;
+    margin-top: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;

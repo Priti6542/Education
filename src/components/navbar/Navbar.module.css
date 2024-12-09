@@ -161,7 +161,7 @@
     list-style: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     right: 0;
     background-color: white;
@@ -170,9 +170,12 @@
 
   /* When the menu is opened */
   .navbarListOpen {
+    width: 40%;
+    height: 300%;
     display: flex;
+    margin-left: 10px;
     animation: slideIn 0.3s ease-in-out;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color:antiquewhite;
   }
 
   /* Animation for sliding in */
