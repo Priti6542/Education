@@ -6,6 +6,7 @@ import Cources from '../components/home/cources/Cources'
 import Video from '../components/home/video/Video'
 import Enroll from '../components/home/enroll/Enroll'
 import News from '../components/home/news/News'
+import Footer from '../components/home/footer/Footer'
 
 
 function HomePage() {
@@ -19,8 +20,10 @@ function HomePage() {
       <Video/>
       <Enroll/>
       <News/>
+      <Footer/>
 
     </div>
+   
   )
 }
 

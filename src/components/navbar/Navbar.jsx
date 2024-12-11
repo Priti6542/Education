@@ -30,16 +30,16 @@ const Navbar = () => {
                         <Link to="/" className={styles.navbarLink}>Home</Link>
                     </li>
                     <li className={styles.navbarItem}>
-                        <a href="/about" className={styles.navbarLink} data-nav-link>About</a>
+                        <Link to="/about" className={styles.navbarLink}>About </Link>
                     </li>
                     <li className={styles.navbarItem}>
-                        <a href="/courses" className={styles.navbarLink} data-nav-link>Courses</a>
+                        <Link to="/cources" className={styles.navbarLink}>Cources</Link>
                     </li>
                     <li className={styles.navbarItem}>
-                        <a href="/blog" className={styles.navbarLink} data-nav-link>Blog</a>
+                        <Link to="/blog" className={styles.navbarLink}>Blog</Link>
                     </li>
                     <li className={styles.navbarItem}>
-                        <a href="/contact" className={styles.navbarLink} data-nav-link>Contact</a>
+                        <Link to="/contact" className={styles.navbarLink}>Contact</Link>
                     </li>
                 </ul>
             </nav>

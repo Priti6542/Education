@@ -6,8 +6,10 @@ import { IoLibraryOutline } from "react-icons/io5";
 import { IoPeopleOutline } from "react-icons/io5";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { FiClock } from "react-icons/fi";
+import { useNavigate } from 'react-router-dom';  // Import useNavigate from react-router-dom
 
 function Cources() {
+    const navigate = useNavigate();  // Initialize navigate function
 
     // Function to render stars dynamically based on rating
     const renderStars = (rating) => {
@@ -34,10 +36,14 @@ function Cources() {
         return stars;
     };
 
-    return (
+    // Function to handle "Browse More Courses" button click
+    const handleBrowseMore = () => {
+        navigate('/cources');  // This will navigate to the courses page
+    };
 
+    return (
         <div className={styles.heading}>
-            <div className={styles.course}>POPULAR COURCES</div>
+            <div className={styles.course}>POPULAR COURSES</div>
             <div className={styles.name}>Pick A Course To Get Started</div>
             <div className={styles.courses_container}>
                 {CourcesData.map((course, index) => (
@@ -51,7 +57,6 @@ function Cources() {
                         <p>{course.details}</p>
 
                         {/* Rating */}
-
                         <p>
                             {renderStars(course.rating)} {/* Render dynamic stars */}
                             <span style={{ color: 'orange', fontWeight: 'bold' }}></span> {course.rating}  {/* Show numeric rating */}
@@ -66,11 +71,10 @@ function Cources() {
                         </div>
 
                         {/* Price */}
-
                     </div>
                 ))}
             </div>
-            <button className={styles.button}>Browse more courses<IoIosArrowRoundForward size={25} /></button>
+            <button className={styles.button} onClick={handleBrowseMore}>Browse more courses<IoIosArrowRoundForward size={25} /></button>
         </div>
     );
 }
