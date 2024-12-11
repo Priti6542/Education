@@ -1,5 +1,5 @@
 import img1 from '..//src/components/cources/image/img1.webp'
-import img2 from "../../Education/src/components/cources/image/img2.jpg";   // Correct path and file name
+import img2 from '..//src/components/cources/image/img2.jpg'   // Correct path and file name
 import img3 from "..//src/components/cources/image/img3.jpg"
 import img4 from "..//src/components/cources/image/img4.webp"
 import img5 from "..//src/components/cources/image/img5.jpeg"
