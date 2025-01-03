@@ -18,25 +18,123 @@ import img17 from "..//src/components/cources/image/img17.avif"
 
 export const OurCources = [
   {   
+    id:"Software testing",
     time:"3 weeks",
     image: img1,
-
     type: "New",
-    heading: "Software Testing For Test Planning & Design",
+    heading: "Software Testing ",
     rating: <>(5.0/7 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
     students:"35 students",
-    // text: "Test Planning & Design",
-    // details: "Looking to enhance your skills with the best software training institute in Pune? Our",
-    button: "Learn More"
+    button: "Learn More",
+
+
+    CourceImage: "https://www.theiceway.com/hubfs/Why%20is%20Software%20Testing%20So%20Important.jpg",
+
+    instructor:"Saurabh Sir",
+
+    description:"The Complete Software Testing Course - Beginner to Advance is designed to teach you everything you need to know about software testing, from the basics to advanced techniques. You will learn manual testing, automated testing, QA processes, and how to find and fix bugs in software. The course covers popular tools like Selenium, JUnit, and others, with hands-on projects and real-world examples to help you build practical skills.",
+
+    Syllabus: [ // Multiple syllabi
+      {
+        title: "Module1",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+      {
+        title: "Module2",
+        content: [
+          "Advanced Testing Techniques",
+          "Integration Testing",
+          "Performance Testing with JMeter"
+        ]
+      },
+      {
+        title: "Module3",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+
+      {
+        title: "Module4",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+
+      {
+        title: "Module5",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+
+      {
+        title: "Module6",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+
+      {
+        title: "Module7",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+
+      {
+        title: "Module8",
+        content: [
+          "Introduction to Software Testing",
+          "Manual Testing Techniques",
+          "Automation Testing using Selenium"
+        ]
+      },
+
+
+    ],
+    notes: [
+      {
+        title: 'Introduction to Software Testing',
+        content: 'This note covers the basics of software testing, including the types of testing and why they are important.'
+      },
+      {
+        title: 'Automation Testing with Selenium',
+        content: 'Learn how to use Selenium to automate repetitive testing tasks.'
+      }
+    ],
+
+    lectures: [
+      { title: "Introduction to Software Testing", link: "https://storage.googleapis.com/mannequin/blobs/69d4b519-ec90-4a49-a8f1-e44394e281ad.mp4" },
+      { title: "Advanced Testing Techniques", link: "https://storage.googleapis.com/mannequin/blobs/69d4b519-ec90-4a49-a8f1-e44394e281ad.mp4_" }
+    ],
+    
   },
+
+  
   {   
+    id:"AWS Administrator",
     time:"3 weeks",
     image: img2,
 
     type: "Popular",
-    heading: "AWS Administrator For Cloud Infrastructure Management",
+    heading: "AWS Administrator ",
     rating: <>(4.5/5 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
@@ -47,11 +145,12 @@ export const OurCources = [
   },
 
   {   
+    id:"Dev-Ops",
     time:"3 weeks",
     image: img3,
 
     type: "Popular",
-    heading: "AWS Administrator For Continuous Integration/Continuous Deployment (CI/CD)",
+    heading: "Dev-Ops",
     rating: <>(4.5/5 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
@@ -63,11 +162,12 @@ export const OurCources = [
   },
 
   {   
+    id:"power-BI",
     time:"3 weeks",
     image: img4,
 
     type:"Trending",
-    heading: "Power BI For Data Modeling and Analysis",
+    heading: "Power BI",
     rating: <>(4.5/5 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
@@ -79,11 +179,12 @@ export const OurCources = [
   },
 
   {   
+    id:"Data-science",
     time:"3 weeks",
     image: img5,
 
     type:"Data Science",
-    heading: "Statistical Analysis Data Modeling and Analysis",
+    heading: "Data Science",
     rating: <>(4.5/5 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
@@ -94,7 +195,8 @@ export const OurCources = [
     button: "Learn More"
   },
 
-  {  
+  { 
+    id:"Full-stack-developer", 
     time:"3 weeks",
     image: img6,
     type:"New",
@@ -110,6 +212,7 @@ export const OurCources = [
   },
 
   { 
+    id:"Big-Data",
     time:"3 weeks",
     image: img7,
 
@@ -126,11 +229,12 @@ export const OurCources = [
   },
 
   {  
+    id:"Medical-Coding",
     time:"3 weeks",
     image: img8,
 
     type:"Trending",
-    heading: "Medical Coding - Billing",
+    heading: "Medical  Coding",
     rating: <>(4.5/5 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
@@ -142,11 +246,12 @@ export const OurCources = [
   },
 
   {   
+    id:"AR-Caller",
     time:"3 weeks",
     image: img9,
 
     type:"Trending",
-    heading: "AR Caller RCM",
+    heading: "AR Caller ",
     rating: <>(4.5/5 Rating)</>,
     price:"$29",
     lesson:"15 lesson",
@@ -158,6 +263,7 @@ export const OurCources = [
   },
 
   {   
+    id:"Java",
     time:"3 weeks",
     image: img10,
 
@@ -174,6 +280,7 @@ export const OurCources = [
   },
 
   {   
+    id:"C#-and-.Net",
     time:"3 weeks",
     image: img11,
 
@@ -190,6 +297,7 @@ export const OurCources = [
   },
 
   {   
+    id:"Business-Analyst",
     time:"3 weeks",
     image: img12,
     type:"Trending",
@@ -206,6 +314,7 @@ export const OurCources = [
   },
 
   {   
+    id:"Sales-Force",
     time:"3 weeks",
     image: img13,
     type:"Trending",
@@ -222,6 +331,7 @@ export const OurCources = [
   },
 
   {   
+    id:"SQL",
     time:"3 weeks",
     image: img14,
     type:"Trending",
@@ -238,6 +348,7 @@ export const OurCources = [
   },
 
   {   
+    id:"Scrum-Master",
     time:"3 weeks",
     image: img15,
     type:"Trending",
@@ -254,6 +365,7 @@ export const OurCources = [
   },
 
   {   
+    id:"Marketing",
     time:"3 weeks",
     image: img16,
     type:"Trending",
@@ -270,6 +382,7 @@ export const OurCources = [
   },
 
   {   
+    id:"Skill",
     time:"3 weeks",
     image: img17,
     type:"Trending",
